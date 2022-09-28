@@ -1,0 +1,69 @@
+#include "P18F452.inc"
+LIST P=18F452, F=INHX32, MM=OFF
+
+    CONFIG OSC=XT
+    CONFIG WDT=OFF
+    #define LEDs PORTB
+
+    CBLOCK 0x00
+    TEMP_0, T1, T2, T3
+    ENDC
+
+ ORG 0x00
+    GOTO MAIN
+    ORG 0x200
+
+MAIN:
+    CLRF TRISB
+    CALL START_AGAIN
+
+ENDLESS_LOOP
+    TBLRD*+
+    TBLRD+*
+    MOVF TABLAT, W
+    MOVWF LEDs
+    CALL DELAY
+    DECF TEMP_0, F
+    BNZ ENDLESS_LOOP
+    CALL START_AGAIN
+    BRA ENDLESS_LOOP
+
+START_AGAIN
+    MOVLW D'20'
+    MOVWF TEMP_0
+    MOVLW 0x00
+    MOVWF TBLPTRL
+    MOVLW 0x05
+    MOVWF TBLPTRH
+    RETURN
+
+DELAY                  ; 500ms Delay, F=10MHz
+            MOVLW D'5'
+            MOVWF T1
+    LOP_1   MOVLW D'200'
+            MOVWF T2
+    LOP_2   MOVLW D'250'
+            MOVWF T3
+    LOP_3   NOP
+            NOP
+            DECF T3,F
+            BNZ LOP_3
+            DECF T2,F
+            BNZ LOP_2
+            DECF T1,F
+            BNZ LOP_1
+            RETURN
+
+LUT:
+    ORG 0x500
+    DATA1 DB 0X3F
+    DATA2 DB 0X06
+    DATA3 DB 0X5B
+    DATA4 DB 0X4F
+    DATA5 DB 0X66
+    DATA6 DB 0X6D
+    DATA7 DB 0X7D
+    DATA8 DB 0X07
+    DATA9 DB 0X7F
+    DATA10 DB 0X6F
+END

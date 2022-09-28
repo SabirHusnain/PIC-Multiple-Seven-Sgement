@@ -1,0 +1,74 @@
+MPLINK 5.08, LINKER
+Linker Map File - Created Fri May 28 08:39:25 2021
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+                   .org_0       code   0x000000    program   0x000004
+                   .cinit    romdata   0x000004    program   0x000002
+                   .org_1       code   0x000200    program   0x000048
+                   .org_2       code   0x000500    program   0x000014
+.config_300001_BUILD/DEFAULT/PRODUCTION/7_SEGME    romdata   0x300001    program   0x000001
+.config_300003_BUILD/DEFAULT/PRODUCTION/7_SEGME    romdata   0x300003    program   0x000001
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x000005      
+                            0x000200    0x000247      
+                            0x000500    0x000513      
+                            0x300001    0x300001      
+                            0x300003    0x300003      
+            100 out of 33048 program addresses used, program memory utilization is 0%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                    DATA1   0x000500    program     static F:\My course\Semester 4\Labs\Embedded Systems Lab\PIC\Lab 4\Lab 4 (Home Task)_7_SEGMENT_DISPLAY.X.X\7_Segment.asm
+                   DATA10   0x000512    program     static F:\My course\Semester 4\Labs\Embedded Systems Lab\PIC\Lab 4\Lab 4 (Home Task)_7_SEGMENT_DISPLAY.X.X\7_Segment.asm
+                    DATA2   0x000502    program     static F:\My course\Semester 4\Labs\Embedded Systems Lab\PIC\Lab 4\Lab 4 (Home Task)_7_SEGMENT_DISPLAY.X.X\7_Segment.asm
+                    DATA3   0x000504    program     static F:\My course\Semester 4\Labs\Embedded Systems Lab\PIC\Lab 4\Lab 4 (Home Task)_7_SEGMENT_DISPLAY.X.X\7_Segment.asm
+                    DATA4   0x000506    program     static F:\My course\Semester 4\Labs\Embedded Systems Lab\PIC\Lab 4\Lab 4 (Home Task)_7_SEGMENT_DISPLAY.X.X\7_Segment.asm
+                    DATA5   0x000508    program     static F:\My course\Semester 4\Labs\Embedded Systems Lab\PIC\Lab 4\Lab 4 (Home Task)_7_SEGMENT_DISPLAY.X.X\7_Segment.asm
+                    DATA6   0x00050a    program     static F:\My course\Semester 4\Labs\Embedded Systems Lab\PIC\Lab 4\Lab 4 (Home Task)_7_SEGMENT_DISPLAY.X.X\7_Segment.asm
+                    DATA7   0x00050c    program     static F:\My course\Semester 4\Labs\Embedded Systems Lab\PIC\Lab 4\Lab 4 (Home Task)_7_SEGMENT_DISPLAY.X.X\7_Segment.asm
+                    DATA8   0x00050e    program     static F:\My course\Semester 4\Labs\Embedded Systems Lab\PIC\Lab 4\Lab 4 (Home Task)_7_SEGMENT_DISPLAY.X.X\7_Segment.asm
+                    DATA9   0x000510    program     static F:\My course\Semester 4\Labs\Embedded Systems Lab\PIC\Lab 4\Lab 4 (Home Task)_7_SEGMENT_DISPLAY.X.X\7_Segment.asm
+                    DELAY   0x00022a    program     static F:\My course\Semester 4\Labs\Embedded Systems Lab\PIC\Lab 4\Lab 4 (Home Task)_7_SEGMENT_DISPLAY.X.X\7_Segment.asm
+             ENDLESS_LOOP   0x000206    program     static F:\My course\Semester 4\Labs\Embedded Systems Lab\PIC\Lab 4\Lab 4 (Home Task)_7_SEGMENT_DISPLAY.X.X\7_Segment.asm
+                    LOP_1   0x00022e    program     static F:\My course\Semester 4\Labs\Embedded Systems Lab\PIC\Lab 4\Lab 4 (Home Task)_7_SEGMENT_DISPLAY.X.X\7_Segment.asm
+                    LOP_2   0x000232    program     static F:\My course\Semester 4\Labs\Embedded Systems Lab\PIC\Lab 4\Lab 4 (Home Task)_7_SEGMENT_DISPLAY.X.X\7_Segment.asm
+                    LOP_3   0x000236    program     static F:\My course\Semester 4\Labs\Embedded Systems Lab\PIC\Lab 4\Lab 4 (Home Task)_7_SEGMENT_DISPLAY.X.X\7_Segment.asm
+                      LUT   0x000248    program     static F:\My course\Semester 4\Labs\Embedded Systems Lab\PIC\Lab 4\Lab 4 (Home Task)_7_SEGMENT_DISPLAY.X.X\7_Segment.asm
+                     MAIN   0x000200    program     static F:\My course\Semester 4\Labs\Embedded Systems Lab\PIC\Lab 4\Lab 4 (Home Task)_7_SEGMENT_DISPLAY.X.X\7_Segment.asm
+              START_AGAIN   0x00021c    program     static F:\My course\Semester 4\Labs\Embedded Systems Lab\PIC\Lab 4\Lab 4 (Home Task)_7_SEGMENT_DISPLAY.X.X\7_Segment.asm
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                     MAIN   0x000200    program     static F:\My course\Semester 4\Labs\Embedded Systems Lab\PIC\Lab 4\Lab 4 (Home Task)_7_SEGMENT_DISPLAY.X.X\7_Segment.asm
+             ENDLESS_LOOP   0x000206    program     static F:\My course\Semester 4\Labs\Embedded Systems Lab\PIC\Lab 4\Lab 4 (Home Task)_7_SEGMENT_DISPLAY.X.X\7_Segment.asm
+              START_AGAIN   0x00021c    program     static F:\My course\Semester 4\Labs\Embedded Systems Lab\PIC\Lab 4\Lab 4 (Home Task)_7_SEGMENT_DISPLAY.X.X\7_Segment.asm
+                    DELAY   0x00022a    program     static F:\My course\Semester 4\Labs\Embedded Systems Lab\PIC\Lab 4\Lab 4 (Home Task)_7_SEGMENT_DISPLAY.X.X\7_Segment.asm
+                    LOP_1   0x00022e    program     static F:\My course\Semester 4\Labs\Embedded Systems Lab\PIC\Lab 4\Lab 4 (Home Task)_7_SEGMENT_DISPLAY.X.X\7_Segment.asm
+                    LOP_2   0x000232    program     static F:\My course\Semester 4\Labs\Embedded Systems Lab\PIC\Lab 4\Lab 4 (Home Task)_7_SEGMENT_DISPLAY.X.X\7_Segment.asm
+                    LOP_3   0x000236    program     static F:\My course\Semester 4\Labs\Embedded Systems Lab\PIC\Lab 4\Lab 4 (Home Task)_7_SEGMENT_DISPLAY.X.X\7_Segment.asm
+                      LUT   0x000248    program     static F:\My course\Semester 4\Labs\Embedded Systems Lab\PIC\Lab 4\Lab 4 (Home Task)_7_SEGMENT_DISPLAY.X.X\7_Segment.asm
+                    DATA1   0x000500    program     static F:\My course\Semester 4\Labs\Embedded Systems Lab\PIC\Lab 4\Lab 4 (Home Task)_7_SEGMENT_DISPLAY.X.X\7_Segment.asm
+                    DATA2   0x000502    program     static F:\My course\Semester 4\Labs\Embedded Systems Lab\PIC\Lab 4\Lab 4 (Home Task)_7_SEGMENT_DISPLAY.X.X\7_Segment.asm
+                    DATA3   0x000504    program     static F:\My course\Semester 4\Labs\Embedded Systems Lab\PIC\Lab 4\Lab 4 (Home Task)_7_SEGMENT_DISPLAY.X.X\7_Segment.asm
+                    DATA4   0x000506    program     static F:\My course\Semester 4\Labs\Embedded Systems Lab\PIC\Lab 4\Lab 4 (Home Task)_7_SEGMENT_DISPLAY.X.X\7_Segment.asm
+                    DATA5   0x000508    program     static F:\My course\Semester 4\Labs\Embedded Systems Lab\PIC\Lab 4\Lab 4 (Home Task)_7_SEGMENT_DISPLAY.X.X\7_Segment.asm
+                    DATA6   0x00050a    program     static F:\My course\Semester 4\Labs\Embedded Systems Lab\PIC\Lab 4\Lab 4 (Home Task)_7_SEGMENT_DISPLAY.X.X\7_Segment.asm
+                    DATA7   0x00050c    program     static F:\My course\Semester 4\Labs\Embedded Systems Lab\PIC\Lab 4\Lab 4 (Home Task)_7_SEGMENT_DISPLAY.X.X\7_Segment.asm
+                    DATA8   0x00050e    program     static F:\My course\Semester 4\Labs\Embedded Systems Lab\PIC\Lab 4\Lab 4 (Home Task)_7_SEGMENT_DISPLAY.X.X\7_Segment.asm
+                    DATA9   0x000510    program     static F:\My course\Semester 4\Labs\Embedded Systems Lab\PIC\Lab 4\Lab 4 (Home Task)_7_SEGMENT_DISPLAY.X.X\7_Segment.asm
+                   DATA10   0x000512    program     static F:\My course\Semester 4\Labs\Embedded Systems Lab\PIC\Lab 4\Lab 4 (Home Task)_7_SEGMENT_DISPLAY.X.X\7_Segment.asm
+
+
